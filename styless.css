@@ -1,0 +1,153 @@
+@import "compass";
+
+body {
+  background:black;
+  overflow: hidden;
+  font-family:"-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+@include keyframes(tip) {
+  0%, 100% { opacity: 0; }
+  10%, 80% { opacity: 1; }
+}
+
+/*MENU */
+
+#menu{
+  background-color: #000;
+}
+#menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+}
+
+#menu ul li{
+  display: inline-block;
+}
+
+#menu ul li a{
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#menu ul li a:hover{
+  background-color: #b8a242;
+}
+
+.item-r{
+  float: right;
+}
+
+.titulo{
+    font-family:"-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: white;
+    text-shadow: 1px 1px 25px black;
+    text-align: center;
+    text-indent:400px;
+    padding-bottom:0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 30px;
+    margin: auto;
+    height:500px;
+    background: url(index.jpg);
+    width: 2720px
+    
+    
+}
+/* LINEA DE ABAJO*/
+hr.one{
+  border: none;
+  height: 2px;
+  background: rgb(196, 125, 19);
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+/* BANNER */
+
+.cards-banner-one {
+  width: 100%;
+  height: 450px;
+  background: url(banner.jpg);
+  margin-bottom: 40px;
+}
+.cards-banner-one .content{
+  text-align:center;
+  width: 130%;
+  height: 550px;
+  padding-bottom:50px; 
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-end;
+  color:white;
+  
+  font-family:"-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.cards-banner-one p,
+  .cards-banner-one h2 {
+    margin: 5px 0px 30px 400px;
+    
+
+}
+.btn {
+  
+ 
+  
+  font-weight: bold;
+  margin-left: 16%;
+  padding: 10px 40px 10px;
+  background: #262626;
+  color: white;
+  font-size: 20px;
+  border:2px solid white;
+ 
+}
+
+.btn:hover{
+  opacity: .7;
+}
+
+/* LINEA DE ABAJO 2*/
+hr.two{
+  margin:0;
+  border: none;
+  height: 2px;
+  background: rgb(196, 125, 19);
+
+}
+
+/* barra de ranking chileno */
+
+.nav > li {
+  float:left;
+}
+
+.nav li ul {
+  display:none;
+  position: absolute;
+  min-width: 140px;
+}
+
+
+@media (max-width:1000px) {
+  body{
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      background: rgba(0,0,0,0.4);
+      margin-top:20px;
+  } 
+  hr.one{
+  height: 100px;
+}
+.titulo{
+height:90px
+}
+}
