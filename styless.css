@@ -135,7 +135,7 @@ hr.two{
 }
 
 
-@media (max-width:1000px) {
+@media (max-width:600px) {
   body{
       width: 100%;
       text-align: center;
@@ -143,6 +143,10 @@ hr.two{
       font-size: 40px;
       background: rgba(0,0,0,0.4);
       margin-top:20px;
+      height:100px;
+      z-index: 100;
+      top:0;
+      position: fixed;
   } 
   hr.one{
   height: 100px;
@@ -150,4 +154,15 @@ hr.two{
 .titulo{
 height:90px
 }
+.cards-banner-one{
+  margin-top:600px;
+  height:1000px;
+  top:0;
+  position: fixed;
+}
+  .cards-banner-one .content{
+margin:0;
+  }
+
+  
 }
